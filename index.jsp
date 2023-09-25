@@ -1,15 +1,62 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII"
-    pageEncoding="US-ASCII"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>First JSP</title>
+    <meta charset="UTF-8">
+    <title>Puppy Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
-<%@ page import="java.util.Date" %>
 <body>
-<h3>Hi Goren</h3><br>
-<strong>Current Time is</strong>: <%=new Date() %>
-
+    <div class="container">
+        <h1>Welcome to Puppy Paradise</h1>
+        <p>Here are some adorable puppies for you to enjoy:</p>
+        <ul>
+            <li>
+                <img src="puppy1.jpg" alt="Puppy 1">
+                <h2>Puppy 1</h2>
+                <p>This cute puppy loves to play fetch and cuddle.</p>
+            </li>
+            <li>
+                <img src="puppy2.jpg" alt="Puppy 2">
+                <h2>Puppy 2</h2>
+                <p>Puppy 2 is always up for an adventure and enjoys long walks.</p>
+            </li>
+            <li>
+                <img src="puppy3.jpg" alt="Puppy 3">
+                <h2>Puppy 3</h2>
+                <p>Puppy 3 is a great companion and loves meeting new people.</p>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
