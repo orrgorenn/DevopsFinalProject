@@ -28,13 +28,19 @@
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #f9f9f9;
         }
-    </style>
+        img {
+            max-width: 100%; /* Ensures images don't exceed their container width */
+            height: auto; /* Automatically scales images proportionally */
+            display: block; /* Removes any extra spacing below images */
+            margin: 0 auto; /* Centers the images horizontally */
+        }
+    </style>    
 </head>
 <body>
     <div class="container">
