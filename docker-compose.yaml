@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    privileged: true
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - /home/orrgoren/code/hit/devopsfinalproject/volumes/jenkins_home:/var/jenkins_home
+      - /home/orrgoren/code/hit/devopsfinalproject/volumes/goren:/shared
+
+  web:
+    image: tomcat
+    volumes:
+      - /home/orrgoren/code/hit/devopsfinalproject/volumes/goren:/usr/local/tomcat/webapps/ROOT/goren
+    ports:
+      - "8082:8080"
