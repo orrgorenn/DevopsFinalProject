@@ -44,7 +44,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Puppy Paradise</h1>
+        <h1>You are not at the puppy paradise website!</h1>
         <p>Here are some adorable puppies for you to enjoy:</p>
         <ul>
             <li>
